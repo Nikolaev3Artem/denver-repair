@@ -585,6 +585,8 @@ input{
   padding-right: 2rem;
   font-size: 20px;
   font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(4 71 67 / var(--tw-text-opacity));
 }
 
 .container{
@@ -606,6 +608,17 @@ input{
   font-weight: 700;
   --tw-text-opacity: 1;
   color: rgb(255 165 0 / var(--tw-text-opacity));
+}
+
+@media (max-width: 768px) {
+  section {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  label {
+    font-size: 14px;
+  }
 }
 
 .fixed {
@@ -662,6 +675,10 @@ input{
   margin-bottom: 2rem;
 }
 
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
 .ml-4 {
   margin-left: 1rem;
 }
@@ -682,6 +699,10 @@ input{
   margin-top: 3rem;
 }
 
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
 .mt-4 {
   margin-top: 1rem;
 }
@@ -690,12 +711,20 @@ input{
   margin-top: 2rem;
 }
 
+.block {
+  display: block;
+}
+
 .flex {
   display: flex;
 }
 
 .grid {
   display: grid;
+}
+
+.hidden {
+  display: none;
 }
 
 .h-\[138px\] {
@@ -792,10 +821,6 @@ input{
   justify-content: space-around;
 }
 
-.gap-4 {
-  gap: 1rem;
-}
-
 .gap-6 {
   gap: 1.5rem;
 }
@@ -859,6 +884,10 @@ input{
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.text-start {
+  text-align: start;
 }
 
 .text-\[12px\] {
@@ -934,6 +963,12 @@ input{
   display: none!important;
 }
 
+@media (max-width: 1024px) {
+  .lg\:text-\[32px\] {
+    font-size: 32px;
+  }
+}
+
 @media (max-width: 768px) {
   .md\:mx-4 {
     margin-left: 1rem;
@@ -942,6 +977,18 @@ input{
 
   .md\:ml-3 {
     margin-left: 0.75rem;
+  }
+
+  .md\:mt-6 {
+    margin-top: 1.5rem;
+  }
+
+  .md\:block {
+    display: block;
+  }
+
+  .md\:hidden {
+    display: none;
   }
 
   .md\:h-\[375px\] {
@@ -982,5 +1029,25 @@ input{
 
   .md\:gap-14 {
     gap: 3.5rem;
+  }
+
+  .md\:text-\[14px\] {
+    font-size: 14px;
+  }
+
+  .md\:text-\[18px\] {
+    font-size: 18px;
+  }
+
+  .md\:text-\[20px\] {
+    font-size: 20px;
+  }
+
+  .md\:text-\[24px\] {
+    font-size: 24px;
+  }
+
+  .md\:text-\[32px\] {
+    font-size: 32px;
   }
 }

@@ -34,13 +34,19 @@
 
 @layer components{
     .main-button{
-        @apply py-4 px-8 bg-orange rounded-full font-bold text-[20px]
+        @apply py-4 px-8 bg-orange rounded-full font-bold text-[20px] text-dark-green
     }
     .container{
         max-width: 1224px;
     }
     .submit-button{
         @apply bg-dark-green text-orange text-[20px] font-bold w-fit px-8 py-4 rounded-full mt-8
+    }
+    section{
+        @apply md:my-12
+    }
+    label{
+        @apply md:text-[14px]
     }
 }
 
